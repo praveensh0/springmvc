@@ -1,5 +1,8 @@
 package com.learning.spring.mvc;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class LoginService {
 	
 	/**

@@ -1,6 +1,7 @@
 package com.learning.spring.mvc.controller;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +15,9 @@ import com.learning.spring.mvc.LoginService;
 public class LoginController {
 
 	private static final Logger LOGGER = Logger.getLogger(LoginController.class);
-	private LoginService loginService = new LoginService();
+	
+	@Autowired
+	private LoginService loginService ;
 	
 	@RequestMapping(value = "/default")
 	@ResponseBody

@@ -1,11 +1,12 @@
 <html>
 <head>
-<title>Yahoo!!</title>
+<title>Login Page!</title>
 </head>
 <body>
     <p><font color="red">${errorMessage}</font></p>
-    <form action="/login.do" method="POST">
-        Name : <input name="name" type="text" /> Password : <input name="password" type="password" /> <input type="submit" />
+    <form action="/login" method="POST">
+        Name : <input name="name" type="text" /> <br/>
+        Password : <input name="password" type="password" /> <input type="submit" value="Login"/>
     </form>
 </body>
 </html>
